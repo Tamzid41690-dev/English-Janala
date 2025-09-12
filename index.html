@@ -17,7 +17,7 @@
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
-<body class="container mx-auto overflow-x-hidden">
+<body class=" overflow-x-hidden">
 <!-- nav section -->
 <nav class="container mx-auto">
 
@@ -65,7 +65,7 @@
 
 </nav>
 <!-- banner section -->
-<section class="flex flex-col-reverse md:flex-row gap-5 justify-between items-center py-5 px-5 md:px-0">
+<section class="flex flex-col-reverse md:flex-row gap-5 justify-between items-center py-5 px-5 md:px-0 container mx-auto">
   <div class="content flex-1">
     <h2 class="text-4xl font-bold mb-8"><span class="text-sky-400">English </span>is Easy!!</h2>
     <p class="font-bangla">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
@@ -81,7 +81,7 @@
   </div>
 </section>
 <!-- level section -->
- <section >
+ <section class="container mx-auto" >
       <h2 class="text-4xl font-bold mb-8 text-center"><span class="text-sky-400">let's </span>Learn Vocabularies</h2>
      <div>
       <div>
@@ -92,12 +92,12 @@
      </div>
  </section>
 
-<section id="infinity" class="flex justify-center items-center py-10 hidden">
+<section id="infinity" class="flex justify-center items-center py-10 hidden container mx-auto">
   <span class="loading loading-bars loading-xl"></span>
 </section>
 
  <!-- word container -->
-    <section id="word-container" class="my-10 bg-gray-100 p-6 w-11/12 mx-auto rounded-2xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 ">
+    <section id="word-container" class="my-10 bg-gray-100 p-6 w-11/12 mx-auto rounded-2xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 container mx-auto">
      
     <div class="text-center col-span-full space-y-6 p-10">
       <p class="text-[#79716b] font-bangla font-semibold text-2xl">আপনি এখনো কোন Lesson Select করেন নি</p>
@@ -121,6 +121,87 @@
     </div>
   </div>
 </dialog>
+
+<!-- FAQ Section -->
+<section class="py-12 px-4 bg-gray-0 container mx-auto">
+  <div class="max-w-4xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Find answers to common questions about our English learning platform</p>
+    </div>
+
+    <!-- FAQ Items -->
+    <div class="space-y-6">
+      <!-- FAQ Item 1 -->
+      <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100 transition-all duration-300 hover:shadow-md">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+            <span class="text-blue-600 font-bold">1</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">How can I start learning English on this website?</h3>
+            <p class="text-gray-600">You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100 transition-all duration-300 hover:shadow-md">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+            <span class="text-blue-600 font-bold">2</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Is this website free to use?</h3>
+            <p class="text-gray-600">We offer both free and premium content. Basic lessons and exercises are available for free, while advanced courses and personalized features require a subscription.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100 transition-all duration-300 hover:shadow-md">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+            <span class="text-blue-600 font-bold">3</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Do I need to create an account?</h3>
+            <p class="text-gray-600">Yes, creating an account allows us to track your progress, save your completed lessons, and provide personalized recommendations based on your learning needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100 transition-all duration-300 hover:shadow-md">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+            <span class="text-blue-600 font-bold">4</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">How can I build my English vocabulary?</h3>
+            <p class="text-gray-600">We offer vocabulary-building exercises, flashcards, spaced repetition tools, and contextual learning activities to help you expand your English vocabulary effectively.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 5 -->
+      <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100 transition-all duration-300 hover:shadow-md">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+            <span class="text-blue-600 font-bold">5</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Do you offer certificates for completed courses?</h3>
+            <p class="text-gray-600">Yes, we provide certificates of completion for all our premium courses. These certificates can be downloaded and shared on professional networks like LinkedIn.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
    <script src="./index.js"></script>
 </body>
