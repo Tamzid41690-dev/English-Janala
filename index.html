@@ -17,9 +17,9 @@
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
-<body class="container mx-auto p-5">
+<body class="container mx-auto overflow-x-hidden">
 <!-- nav section -->
-<nav>
+<nav class="container mx-auto">
 
     <div class="navbar bg-base-100 shadow-sm">
   <div class="navbar-start">
@@ -29,7 +29,7 @@
       </div>
       <ul
         tabindex="0"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        class="menu menu-sm fixed dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
           <li>
         <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i>FAQ</a>
       </li>
@@ -65,32 +65,40 @@
 
 </nav>
 <!-- banner section -->
-<section class="flex flex-col-reverse md:flex-row gap-5 justify-between items-center   py-5 w-11/12 mx-auto">
+<section class="flex flex-col-reverse md:flex-row gap-5 justify-between items-center py-5 px-5 md:px-0">
   <div class="content flex-1">
     <h2 class="text-4xl font-bold mb-8"><span class="text-sky-400">English </span>is Easy!!</h2>
     <p class="font-bangla">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
     <form action="" >
-     
-      <input type="text" placeholder="Enter Your Name" class="input input-neutral my-3 border-gray-300 p-6 rounded-2xl" /><br>
-      <input type="password" placeholder="Enter Password" class="input input-neutral mb-3 border-gray-300 p-6 rounded-2xl my-3" /><br>
+
+      <input type="text" placeholder="Enter Your Name"class="input input-neutral my-3 border-gray-300 p-6 rounded-2xl"/><br>
+      <input type="password" placeholder="Enter Password" class="input input-neutral my-3 border-gray-300 p-6 rounded-2xl"/><br>
       <button class="btn btn-primary">Get Started</button>
     </form>
   </div>
   <div class="image flex-1">
-    <img src="./assets/hero-student.png" alt="">
+    <img src="./assets/hero-student.png" alt="" class="w-full max-w-md h-auto">
   </div>
 </section>
 <!-- level section -->
- <section>
+ <section >
       <h2 class="text-4xl font-bold mb-8 text-center"><span class="text-sky-400">let's </span>Learn Vocabularies</h2>
      <div>
       <div>
-        <div id="lesson-container" class="flex flex-wrap gap-3 justify-center ">
+        <div id="lesson-container" class="flex flex-wrap gap-9 justify-center ">
           <!-- lesson button -->
         </div>
       </div>
      </div>
  </section>
+ <!-- word container -->
+    <section id="word-container" class="my-10 bg-gray-100 p-6 w-11/12 mx-auto rounded-2xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 ">
+     
+    <div class="text-center col-span-full space-y-6 p-10">
+      <p class="text-[#79716b] font-bangla font-semibold text-2xl">আপনি এখনো কোন Lesson Select করেন নি</p>
+      <h2 class="text-4xl font-bold font-bangla">একটি Lesson Select করুন।</h2>
+    </div>
+  </section>
    <script src="./index.js"></script>
 </body>
 </html>
